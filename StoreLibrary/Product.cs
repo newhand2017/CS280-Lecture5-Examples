@@ -47,8 +47,8 @@ namespace StoreLibrary
         //-------------------------------------------------
         private int price;  //小寫代表變數
 
-        public int Price    //開頭大寫代表"屬性"
-        {
+        public int Price    //變數名旁邊直接加{} 為宣告做屬性,
+        {                   //用開頭大寫代表(Coding style)
             get { return this.price; }
 
             set
