@@ -69,8 +69,33 @@ namespace StoreLibrary
         }
 
         //-------------------------------------------------
+        //
+        //public float Discount;
 
-        public float Discount;
+        //
+        private float discount;
+
+        public float Discount
+        {
+            //get => this.discount
+            get { return this.discount; }
+
+            set
+            {
+                if (value > 1.0f)
+                {
+                    this.discount = 1.0f;
+                }
+                else if (value < 0.3f)
+                {
+                    this.discount = 0.3f;
+                }
+                else
+                {
+                    this.discount = value;
+                }
+            }
+        }
 
         //-------------------------------------------------
     }
