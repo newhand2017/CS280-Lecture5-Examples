@@ -19,6 +19,8 @@ namespace Example01
             Console.WriteLine("請輸入產品名稱");
             product.Name = Console.ReadLine();
 
+            Console.WriteLine("共有{0}個Product", Product.TotalProducts);
+
             Console.Write("請輸入{0}的價錢 : ", product.Name);
             //Suppose the price between 39 to 200
             int price = 0;
@@ -80,6 +82,32 @@ namespace Example01
                 Console.WriteLine("價格輸入錯誤");
                 return;
             }
+
+            //---------------------------------------------
+            // product2 = product
+            //
+            //Product product2 = product;
+            //product2.Name = "B";
+            //
+            //---------------------------------------------
+            // product2 copy from product
+            //Product product2 = new Product();
+            //product2.Name = "B";
+            //product2.Price = product.Price;
+            //product2.Discount = product.Discount;
+            //
+            //---------------------------------------------
+            // product2 copy from product, use CLONE
+            Product product2 = product.Clone();
+            //Console.WriteLine("共有{0}個Product", Product.TotalProducts);
+            Console.WriteLine(product);
+
+            product2.Name = "BB";
+            Console.WriteLine(product2);
+
+            //
+            Console.WriteLine("product 的 name {0}", product.Name);
+            Console.WriteLine("product2 的 name {0}", product2.Name);
 
             //---------------------------------------------
         }
