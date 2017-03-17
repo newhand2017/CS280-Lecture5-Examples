@@ -1,0 +1,8 @@
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\bin\Debug\Example01.exe.config
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\obj\Debug\Example01.csprojResolveAssemblyReference.cache
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\bin\Debug\Example01.exe
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\bin\Debug\Example01.pdb
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\bin\Debug\StoreLibrary.dll
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\bin\Debug\StoreLibrary.pdb
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\obj\Debug\Example01.exe
+D:\Work\CSharp\CS280-Lecture5-Examples\Example01\obj\Debug\Example01.pdb
