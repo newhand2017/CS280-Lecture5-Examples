@@ -52,13 +52,28 @@ namespace Example01
             //}
             //---------------------------------------------
             // Example01--02
+            //try
+            //{
+            //    price = int.Parse(Console.ReadLine());
+            //    product.SetPrice(price);
+            //
+            //    // Output result
+            //    Console.WriteLine("產品 : {0}的價格為 : {1}", product.Name, product.GetPrice());
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("價格輸入錯誤");
+            //    return;
+            //}
+            //---------------------------------------------
+            // Example01--03
             try
             {
                 price = int.Parse(Console.ReadLine());
-                product.SetPrice(price);
+                product.Price = price;
 
                 // Output result
-                Console.WriteLine("產品 : {0}的價格為 : {1}", product.Name, product.GetPrice());
+                Console.WriteLine("產品 : {0}的價格為 : {1}", product.Name, product.Price);
             }
             catch
             {

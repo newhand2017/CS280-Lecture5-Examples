@@ -18,26 +18,53 @@ namespace StoreLibrary
         // Example01--2, (封裝)
         // 無法直接以 "=" 設定數值(set), 也無法直接以"." 做呼叫(get)
         //-------------------------------------------------
-        private int Price;  //Example01--2,
+        //private int price;  //Example01--2,
+        //
+        //public int GetPrice()
+        //{
+        //    return this.price;
+        //}
+        //
+        ////product.price = price
+        //public void SetPrice(int price)
+        //{
+        //    if (price > 200)
+        //    {
+        //        this.price = 200;
+        //    }
+        //    else if (price < 39)
+        //    {
+        //        this.price = 39;
+        //    }
+        //    else
+        //    {
+        //        this.price = price;
+        //    }
+        //}
+        //-------------------------------------------------
+        // Example01--03,
+        // 可接受以"="做事
+        //-------------------------------------------------
+        private int price;  //小寫代表變數
 
-        public int GetPrice()
+        public int Price    //開頭大寫代表"屬性"
         {
-            return this.Price;
-        }
+            get { return this.price; }
 
-        public void SetPrice(int price)
-        {
-            if (price > 200)
+            set
             {
-                this.Price = 200;
-            }
-            else if (price < 39)
-            {
-                this.Price = 39;
-            }
-            else
-            {
-                this.Price = price;
+                if (value > 200)
+                {
+                    this.price = 200;
+                }
+                else if (value < 39)
+                {
+                    this.price = 39;
+                }
+                else
+                {
+                    this.price = value;
+                }
             }
         }
 
